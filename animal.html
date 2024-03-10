@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.cdnfonts.com/css/pokemon-solid"
+      rel="stylesheet"
+    />
+    <title>Animal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div id="selectedUserInfo"></div>
+      <div class="dropdown">
+        <button id="dropdown-btn" class="btn-nav">Dropdown</button>
+        <div class="dropdown-content" id="visitorDropdown">
+          <!-- כאן יופיע רשימת האורחים האפשריים -->
+        </div>
+        <button id="resetButton" class="btn-nav">Clear</button>
+      </div>
+    </nav>
+    <div class="sidebar">
+      <div class="nav-buttons">
+        <a href="login.html" class="btn-nav">Login</a>
+        <a href="signup.html" class="btn-nav">Signup</a>
+        <a href="zoo.html" class="btn-nav">Zoo</a>
+        <a href="dashboard.html" class="btn-nav">Dashboard</a>
+      </div>
+    </div>
+    <div>
+      <div id="image">
+        <!-- show here the animal image -->
+      </div>
+      <div>
+        <h1 id="name">name:</h1>
+        <p id="weight">weight:</p>
+        <p id="height">height:</p>
+        <p id="color">color:</p>
+        <p id="habitat">habitat:</p>
+        <p id="isPredator">isPredator:</p>
+        <button id="feed-animal" class="feed-btn">Feed me</button>
+      </div>
+    </div>
+    <div id="related-animals"></div>
+
+    <!-- Modal for thank you message -->
+    <div id="thankYouModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModalButton" class="close">&times;</span>
+        <p>Thank you for feeding the me!</p>
+        <p>🪙 -2</p>
+      </div>
+    </div>
+
+    <!-- Modal for animal escaping -->
+    <div id="animalEscapeModal" class="modal">
+      <div class="modal-content">
+        <p>
+          You don't have enough coins, The animal has escaped from the Pokimon
+          Zoo!
+        </p>
+        <p>So irresponsible of you! 🙄</p>
+        <button id="closeEscapeModalButton" class="btn-nav">close</button>
+      </div>
+    </div>
+
+    <!-- Modal for insufficient coins -->
+    <div id="insufficientCoinsModal" class="modal">
+      <div class="modal-content">
+        <span id="closeInsufficientCoinsModalButton" class="close"
+          >&times;</span
+        >
+        <p>You don't have enough coins, The animal ate you!</p>
+        <p>You are delicious 😋</p>
+      </div>
+    </div>
+    <section id="animal-cards"></section>
+
+    <script src="./main.js"></script>
+    <script src="./animal.js"></script>
+  </body>
+</html>

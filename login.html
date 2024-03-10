@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <span>Or: </span>
+    <a href="signup.html"
+      >Click here to sing-up <span>to visit in the Pokimon - Zoo</span></a
+    >
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/pokemon-solid"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/pokemon-solid"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="title">Login</h1>
+
+    <div id="selectedGuestMessage">
+      <p>There is already a selected guest. Would you like to disconnect?</p>
+      <button id="disconnectButton" class="btn-nav">Disconnect</button>
+    </div>
+
+    <input
+      type="text"
+      id="visitorNameInput"
+      oninput="search()"
+      placeholder="Search visitor by name..."
+    />
+    <div class="visitors-cards" id="visitor-container"></div>
+
+    <script src="./login.js"></script>
+  </body>
+</html>

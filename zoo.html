@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoo</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/pokemon-solid"
+      rel="stylesheet"
+    />
+
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div id="selectedUserInfo"></div>
+      <div class="dropdown">
+        <button id="dropdown-btn" class="btn-nav">Dropdown</button>
+        <div class="dropdown-content" id="visitorDropdown">
+          <!-- כאן יופיע רשימת האורחים האפשריים -->
+        </div>
+        <button id="resetButton" class="btn-nav">Clear</button>
+      </div>
+    </nav>
+    <div class="sidebar">
+      <div class="nav-buttons">
+        <a href="login.html" class="btn-nav">Login</a>
+        <a href="signup.html" class="btn-nav">Signup</a>
+        <a href="dashboard.html" class="btn-nav">Dashboard</a>
+      </div>
+    </div>
+
+    <h1 class="title">The Pokimon Zoo</h1>
+
+    <div id="filters">
+      <label for="weightFilter">Weight:</label>
+      <input type="text" id="weightFilter" />
+      <label for="heightFilter">Height:</label>
+      <input type="text" id="heightFilter" />
+      <label for="colorFilter">Color:</label>
+      <input type="text" id="colorFilter" />
+      <label for="habitatFilter">Habitat:</label>
+      <select id="habitatFilter">
+        <option value="all">All</option>
+        <option value="sea">Sea</option>
+        <option value="land">Land</option>
+      </select>
+      <button class="btn-nav" onclick="filterAnimals()">Apply Filters</button>
+    </div>
+    <div id="filters">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search animal by name..."
+        onkeyup="search()"
+      />
+    </div>
+    <section id="animal-cards"></section>
+    <script src="zoo.js"></script>
+    <script src="animal.js"></script>
+  </body>
+</html>
