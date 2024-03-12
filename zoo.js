@@ -10,8 +10,8 @@ animals.forEach((animal) => {
 
   const image = document.createElement("img");
   // השתמש בשם החיה כדי למצוא את התמונה המתאימה, או הגדר כאן את מסלול התמונה
-  image.src = `./images/${animal.name.toLowerCase()}.jpg`; // הנחה ששמות הקבצים תואמים לשמות החיות
-  image.alt = `./${animal.name} image`;
+  image.src = `./images/${animal.name}.jpg`; // הנחה ששמות הקבצים תואמים לשמות החיות
+  image.alt = `${animal.name} image`;
 
   card.appendChild(name);
   card.appendChild(image);

@@ -26,7 +26,7 @@ function createVisitorCard(visitor) {
   coins.textContent = `Coins: ${visitor.coins}`;
 
   const image = document.createElement("img");
-  image.src = "ash katcham.jpg";
+  image.src = "./images/ash katcham.jpg";
 
   card.appendChild(name);
   card.appendChild(coins);

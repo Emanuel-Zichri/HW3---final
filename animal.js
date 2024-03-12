@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function updateAnimalDetails(animal) {
   const imageContainer = document.getElementById("image");
-  imageContainer.style.backgroundImage = `url(./${animal.name.toLowerCase()}.jpg)`;
+  imageContainer.style.backgroundImage = `url(./images/${animal.name}.jpg)`;
 
   // עדכון הפרטים
   document.getElementById("name").textContent = `Name: ${animal.name}`;
@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", function () {
     name.textContent = animal.name;
 
     const image = document.createElement("img");
-    image.src = `${animal.name.toLowerCase()}.jpg`;
+    image.src = `./images/${animal.name.toLowerCase()}.jpg`;
     image.alt = `${animal.name} image`;
 
     card.appendChild(name);
