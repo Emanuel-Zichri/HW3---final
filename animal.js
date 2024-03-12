@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function updateAnimalDetails(animal) {
   const imageContainer = document.getElementById("image");
-  imageContainer.style.backgroundImage = `url('./${animal.name.toLowerCase()}.jpg')`;
+  imageContainer.style.backgroundImage = `url(./${animal.name.toLowerCase()}.jpg)`;
 
   // עדכון הפרטים
   document.getElementById("name").textContent = `Name: ${animal.name}`;
