@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", function () {
     name.textContent = animal.name;
 
     const image = document.createElement("img");
-    image.src = `./images/${animal.name.toLowerCase()}.jpg`;
+    image.src = `./images/${animal.name}.jpg`;
     image.alt = `${animal.name} image`;
 
     card.appendChild(name);
